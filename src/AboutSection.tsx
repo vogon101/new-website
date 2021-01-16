@@ -1,8 +1,10 @@
 import profilePic from "./img/rome.jpg";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import {faEnvelope, faRss, faRssSquare} from "@fortawesome/free-solid-svg-icons";
 import React from "react";
-import {faGithub} from "@fortawesome/free-brands-svg-icons";
+import {faGithub, faGithubSquare, faLinkedinIn, faTwitter, faTwitterSquare} from "@fortawesome/free-brands-svg-icons";
+import {SocialButton} from "./SocialButton";
+import {faLinkedin} from "@fortawesome/free-brands-svg-icons/faLinkedin";
 
 function AboutSection() {
     return (<div className="section-content">
@@ -29,7 +31,12 @@ function AboutSection() {
                 </div>
 
                 <div className="section-content-valign-bottom">
-                    Hello
+                    <div className="gallery gallery-left gallery-fullwidth">
+                        <SocialButton icon={faGithubSquare} name="Github"/>
+                        <SocialButton icon={faTwitterSquare} name="Twitter"/>
+                        <SocialButton icon={faLinkedinIn} name="LinkedIn"/>
+                        <SocialButton icon={faRssSquare} name="Blog"/>
+                    </div>
                 </div>
 
             </div>
