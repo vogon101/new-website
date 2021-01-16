@@ -4,12 +4,15 @@ import Navbar from 'react-bootstrap/Navbar';
 import {Col, Row, Container, Nav} from "react-bootstrap";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faGithub, faTwitter} from "@fortawesome/free-brands-svg-icons";
-import {faAngleDoubleDown, faRss} from "@fortawesome/free-solid-svg-icons";
+import {faAngleDoubleDown, faEnvelope, faRss} from "@fortawesome/free-solid-svg-icons";
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import {FadeInSection} from "./FadeInContainer";
+import profilePic from './img/rome.jpg'
+import {AboutSection} from "./AboutSection";
+import {ProjectsSection} from "./ProjectsSection";
 
 function App() {
-    function DownArrow(section: String, name: String) {
+    function DownArrow(section: String) {
         return (
             <a href={"#" + section} className="section-bottom">
                 <div><FontAwesomeIcon icon={faAngleDoubleDown} size="2x"/></div>
@@ -26,7 +29,7 @@ function App() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Link href="#about">About</Nav.Link>
-                        <Nav.Link href="#contact">Contact</Nav.Link>
+                        <Nav.Link href="#projects">Projects</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
                 <Navbar.Collapse className="justify-content-end">
@@ -51,34 +54,19 @@ function App() {
                         </Col>
                     </Container>
                 </FadeInSection>
-                {DownArrow("about", "")}
+                {DownArrow("about")}
             </header>
             <div className="Section fp-text-dark" id="about">
-                <Container>
                     <FadeInSection>
-                        <Container>
-                            <h1>About Me</h1>
-                            <Row>
-                                <Col sm={12}>
-                                    <p>
-                                        This is something about me here.
-                                    </p>
-                                </Col>
-                            </Row>
-                        </Container>
+                        <AboutSection/>
                     </FadeInSection>
-                    {DownArrow("contact", "Contact Me")}
-                </Container>
+                    {DownArrow("projects")}
             </div>
 
-            <div className="Section fp-text-dark" id="contact">
+            <div className="Section fp-text-dark" id="projects">
                 <FadeInSection>
-                    <Container>
-                        <h1>Contact Me</h1>
-                        <p>
-                            This is something about me here.
-                        </p>
-                    </Container>
+                    <h1>Projects</h1>
+                    <ProjectsSection/>
                 </FadeInSection>
             </div>
 
