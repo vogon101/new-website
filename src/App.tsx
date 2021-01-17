@@ -54,13 +54,16 @@ function App() {
                         </Col>
                     </Container>
                 </FadeInSection>
+                <div class="force-bottom">
                 {DownArrow("about")}
+                </div>
             </header>
             <div className="Section fp-text-dark" id="about">
                     <FadeInSection>
                         <AboutSection/>
                     </FadeInSection>
-                    {DownArrow("projects")}
+                <div className="break-small"/>
+                {DownArrow("projects")}
             </div>
 
             <div className="Section fp-text-dark" id="projects">
