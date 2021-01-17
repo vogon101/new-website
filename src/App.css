@@ -11,6 +11,12 @@ html {
     /*--color-dark: #ff0000;*/
 }
 
+@media (hover: none) {
+    .no-hover {
+        pointer-events: none;
+    }
+}
+
 body {
     font-family: 'Open Sans', sans-serif !important;
 

@@ -21,8 +21,19 @@ function App() {
 
     }
 
+    const appRef = React.createRef<HTMLDivElement>()
+    let timer = setTimeout(() => {}, 0)
+
+    window.addEventListener("scroll", (event) => {
+        clearTimeout(timer)
+        if (!appRef.current?.classList.contains("no-hover")) {
+            appRef.current?.classList.add("no-hover")
+        }
+        timer = setTimeout(() => appRef.current?.classList.remove("no-hover"), 200)
+    }, false)
+
     return (
-        <div className="App">
+        <div className="App" ref={appRef}>
             <Navbar bg="light" expand="lg" sticky="top">
                 <Navbar.Brand href="#home" className="fp-text-dark">Freddie Poser</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
