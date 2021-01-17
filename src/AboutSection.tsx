@@ -15,7 +15,7 @@ import {faLinkedin} from "@fortawesome/free-brands-svg-icons/faLinkedin";
 
 function AboutSection() {
     return (<div className="section-content">
-        <div className="section-content-left section-card">
+        <div className="section-content-small section-card">
 
             <img src={profilePic} alt="Me!" className=""/>
             <div className="section-card-bottom align-left">
@@ -28,12 +28,12 @@ function AboutSection() {
                 </div>
             </div>
         </div>
-        <div className="section-content-right align-left">
+        <div className="section-content-large align-left">
             <div className="section-content-valign">
                 <div className="section-content-valign-top">
                     <div className="section-content-top">
                         <h1>About Me</h1>
-                        <p>Hello there!</p>
+                        <p>I'm a third year Computer Science Student at the University of Cambridge.</p>
                     </div>
                 </div>
 
