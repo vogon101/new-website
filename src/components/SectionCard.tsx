@@ -1,24 +1,64 @@
 import React, {ReactNode} from "react"
-import progimg from "../img/programming.webp";
-import {Language} from "./Language";
-import {faGitAlt, faJava, faPhp, faPython, faReact} from "@fortawesome/free-brands-svg-icons";
-import {faCode, faDatabase} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faArrowLeft, faArrowRight} from "@fortawesome/free-solid-svg-icons";
 
 interface CardProps {
 
-    children: ReactNode
+    body?: ReactNode
+    sidebar?: ReactNode
     image: string
     imgMaxHeight?: number
-
+    children?: ReactNode
+    sidebarDirection?: string
+    sidebarImage?: string
+    more?: boolean
 }
 
 function SectionCard(props: CardProps) {
 
+    let sidebar = <span/>
+    if (props.sidebar) {
+        sidebar = (
+            <div
+                className={`section-card-slide section-card-slide-${props.sidebarDirection ? props.sidebarDirection : "right"} section-card`}>
+                <div className="section-card-contents">
+                    {props.sidebarImage ?
+                        <div className="section-card-image-container"
+                             style={props.imgMaxHeight ? {maxHeight: props.imgMaxHeight} : {}}>
+                            <img src={props.image} alt=""
+                                 className=""/>
+                        </div> : <span/>}
+                    <div className="section-card-bottom align-left">
+                        {props.sidebar}
+                    </div>
+                </div>
+            </div>
+        )
+    }
+
     return (
         <div className="section-content-small section-card">
-            <img src={props.image} style={props.imgMaxHeight ? {height : props.imgMaxHeight} : {}} alt="" className=""/>
-            <div className="section-card-bottom align-left">
-                {props.children}
+            {sidebar}
+            <div className="section-card-contents">
+                <div className="section-card-image-container"
+                     style={props.imgMaxHeight ? {maxHeight: props.imgMaxHeight} : {}}>
+                    <img src={props.image} alt=""
+                         className=""/>
+                </div>
+                <div className="section-card-bottom align-left section-content-valign">
+                    {props.body ? props.body : props.children}
+                    {
+                        props.more ?
+                            <div className="section-content-valign-bottom">
+                                {props.sidebarDirection === "left" ?
+                                    <FontAwesomeIcon icon={faArrowLeft}/> :
+                                    <div className="align-right"><FontAwesomeIcon icon={faArrowRight}/></div>
+                                }
+                            </div>
+                            : <div/>
+                    }
+                </div>
+
             </div>
         </div>
     )
