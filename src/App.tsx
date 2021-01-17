@@ -62,7 +62,7 @@ function App() {
                 {DownArrow("skill")}
             </div>
 
-            <div className="Section fp-text-dark" id="skill">
+            <div className="Section section-dark" id="skill">
                 <FadeInSection>
                     <h1>Skills & Achievements</h1>
                     <SkillsSection/>

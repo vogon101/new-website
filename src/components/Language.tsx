@@ -8,6 +8,7 @@ interface LanguageProps {
     icon: IconDefinition
     name: string
     ability?: string;
+    noLine?: boolean
 }
 
 function Language(props: LanguageProps) {
@@ -27,7 +28,7 @@ function Language(props: LanguageProps) {
         badge = <Badge text={props.ability} color={color}/>
     }
 
-    return (<div className="Language">
+    return (<div className={`Language ${props.noLine ? "language-noline" : ""}`}>
             <div className="language-left">
                 <FontAwesomeIcon icon={props.icon}/> {props.name} </div>
             <div className="language-right">{badge}</div>

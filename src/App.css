@@ -1,7 +1,8 @@
 html {
+    scroll-behavior: smooth;
     --color-dark: #2D333B;
     --color-light: #F4F5F6;
-    --color-highlight: #F97068;
+    --color-highlight: #1D8A99;
     --card-bg-light: #fafafa;
     --card-shadow-normal: 5px 5px 10px #aaa;
     --card-shadow-active: 7px 7px 15px #999;
@@ -21,7 +22,6 @@ h1, h2, h3, h4, h5, h6, nav {
 
 @media (min-width: 1000px) {
     html {
-        scroll-behavior: smooth;
         scroll-snap-type: y proximity;
     }
 }
@@ -183,6 +183,13 @@ a {
     padding-bottom: 20px;
 }
 
+.section-dark{
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    --card-shadow-normal: 5px 5px 10px #2a2e33;
+    --card-shadow-active: 7px 7px 15px #171a1f;
+}
+
 .section-content-valign {
     width: 100%;
     /*height: 100%;*/
@@ -212,6 +219,7 @@ a {
 
 
 .section-card {
+    color: var(--color-dark);
     position: relative;
     border-radius: 0 0 5px 5px;
     box-shadow: var(--card-shadow-normal);
@@ -343,6 +351,7 @@ a {
     align-self: stretch;
     flex: 1 0 auto;
     z-index: 10;
+    display: flex;
 }
 
 .project-card {
@@ -457,4 +466,12 @@ a {
     border-bottom: 1px solid #bbb;
     padding: 1px 1px 1px 10px;
     min-height: 30px;
+}
+
+.language-noline {
+    border: none;
+}
+
+.link-highlight {
+    color: var(--color-highlight) !important;
 }
