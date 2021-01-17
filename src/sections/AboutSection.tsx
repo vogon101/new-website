@@ -3,11 +3,8 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope, faFileAlt, faRss, faRssSquare} from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import {
-    faGithub,
     faGithubSquare,
     faLinkedinIn,
-    faPagelines,
-    faTwitter,
     faTwitterSquare
 } from "@fortawesome/free-brands-svg-icons";
 import {SocialButton} from "../components/SocialButton";

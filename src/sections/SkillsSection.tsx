@@ -1,9 +1,9 @@
 import React from "react";
 import progimg from "../img/programming2.png"
-import unionimg from "../img/union.jpg"
+import unionimg from "../img/union3.jpg"
 import cameraimg from "../img/camera.jpg"
 import {
-    faCalculator,
+    faCalculator, faCamera,
     faChartLine,
     faCode, faComment,
     faDatabase,
@@ -145,10 +145,14 @@ function SkillsSection() {
 
         </SectionCard>
 
-        <SectionCard image={cameraimg} more imgMaxHeight={200} sidebar={
-            <div>Goodbye</div>
-        } sidebarDirection="left">
+        <SectionCard image={cameraimg} more imgMaxHeight={200} >
             <h3>Other</h3>
+            <ul className="fa-ul">
+                <Ili icon={faCamera}>
+                    Photography
+                    <p className="small">I have photographed a number of events in Cambridge</p>
+                </Ili>
+            </ul>
         </SectionCard>
 
     </div>)

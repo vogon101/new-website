@@ -358,6 +358,7 @@ a {
     flex: 1 0 auto;
     z-index: 10;
     display: flex;
+
 }
 
 .project-card {
