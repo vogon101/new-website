@@ -6,10 +6,10 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faGithub, faTwitter} from "@fortawesome/free-brands-svg-icons";
 import {faAngleDoubleDown, faRss} from "@fortawesome/free-solid-svg-icons";
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons/faLinkedin";
-import {FadeInSection} from "./FadeInContainer";
-import {AboutSection} from "./AboutSection";
-import {ProjectsSection} from "./ProjectsSection";
-import {SkillsSection} from "./SkillsSection";
+import {FadeInSection} from "./components/FadeInContainer";
+import {AboutSection} from "./sections/AboutSection";
+import {ProjectsSection} from "./sections/ProjectsSection";
+import {SkillsSection} from "./sections/SkillsSection";
 
 function App() {
     function DownArrow(section: String) {
@@ -64,6 +64,7 @@ function App() {
 
             <div className="Section fp-text-dark" id="skill">
                 <FadeInSection>
+                    <h1>Skills & Achievements</h1>
                     <SkillsSection/>
                 </FadeInSection>
                 <div className="break-small"/>

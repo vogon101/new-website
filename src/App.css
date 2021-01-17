@@ -1,8 +1,8 @@
 html {
     --color-dark: #282c34;
     --card-bg-light: #fafafa;
-    --card-shadow-normal: 5px 5px 5px #aaa;
-    --card-shadow-active: 5px 5px 10px #999;
+    --card-shadow-normal: 5px 5px 10px #aaa;
+    --card-shadow-active: 7px 7px 15px #999;
     --min-large-width: 1000px;
     /*--color-dark: #ff0000;*/
 }
@@ -189,17 +189,30 @@ a {
     max-width: 100%;
 }
 
+.section-card img {
+    object-fit: cover;
+    object-position: 0 0;
+}
+
 .section-card {
     border-radius: 0 0 5px 5px;
     box-shadow: var(--card-shadow-normal);
-    width: 100%;
-    height: 100%;
     margin-bottom: 20px;
     transition: 0.3s;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 30%;
 }
 
 .section-card:hover {
     box-shadow: var(--card-shadow-active);
+}
+
+@media (max-width: 1000px) {
+    .section-card {
+        flex-basis: 100%;
+    }
 }
 
 .socials-icon {
@@ -213,10 +226,10 @@ a {
     position: relative;
     z-index: 2;
     padding: 20px;
-    width: 100%;
     background-color: white;
     box-shadow: var(--card-shadow-normal);
     align-self: stretch;
+    flex: 1 0 auto;
 }
 
 .project-card {
