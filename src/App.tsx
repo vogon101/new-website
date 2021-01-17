@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
 import Navbar from 'react-bootstrap/Navbar';
-import {Col, Row, Container, Nav} from "react-bootstrap";
+import { Nav} from "react-bootstrap";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faGithub, faTwitter} from "@fortawesome/free-brands-svg-icons";
-import {faAngleDoubleDown, faEnvelope, faRss} from "@fortawesome/free-solid-svg-icons";
+import {faAngleDoubleDown, faRss} from "@fortawesome/free-solid-svg-icons";
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import {FadeInSection} from "./FadeInContainer";
-import profilePic from './img/rome.jpg'
 import {AboutSection} from "./AboutSection";
 import {ProjectsSection} from "./ProjectsSection";
+import {SkillsSection} from "./SkillsSection";
 
 function App() {
     function DownArrow(section: String) {
@@ -48,19 +48,26 @@ function App() {
             <header className="App-header" id="home">
                 <h1>Freddie Poser</h1>
                 <FadeInSection>
-                    <Container className="subheader">
-                        <Col sm={12}>
                             <p className="subheader">Politics & Computers</p>
-                        </Col>
-                    </Container>
                 </FadeInSection>
-                {DownArrow("about")}
+                <div className="force-bottom">
+                    {DownArrow("about")}
+                </div>
             </header>
             <div className="Section fp-text-dark" id="about">
-                    <FadeInSection>
-                        <AboutSection/>
-                    </FadeInSection>
-                    {DownArrow("projects")}
+                <FadeInSection>
+                    <AboutSection/>
+                </FadeInSection>
+                <div className="break-small"/>
+                {DownArrow("skill")}
+            </div>
+
+            <div className="Section fp-text-dark" id="skill">
+                <FadeInSection>
+                    <SkillsSection/>
+                </FadeInSection>
+                <div className="break-small"/>
+                {DownArrow("projects")}
             </div>
 
             <div className="Section fp-text-dark" id="projects">
