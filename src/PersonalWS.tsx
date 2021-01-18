@@ -9,6 +9,7 @@ import {AboutSection} from "./sections/AboutSection";
 import {SkillsSection} from "./sections/SkillsSection";
 import {ProjectsSection} from "./sections/ProjectsSection";
 import React, {RefObject} from "react";
+import {FPNavbar} from "./components/FPNavbar";
 
 function PersonalWS(props: { appRef: RefObject<HTMLDivElement> }) {
 
@@ -36,28 +37,7 @@ function PersonalWS(props: { appRef: RefObject<HTMLDivElement> }) {
     )
 
     return (<div>
-        <Navbar bg="light" expand="lg" sticky="top">
-            <Navbar.Brand href="#home" className="fp-text-dark">Freddie Poser</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
-                    <Nav.Link href="#about">About</Nav.Link>
-                    <Nav.Link href="#projects">Projects</Nav.Link>
-                </Nav>
-            </Navbar.Collapse>
-            <Navbar.Collapse className="justify-content-end">
-                <Nav.Link href="https://twitter.com/freddie_poser"><FontAwesomeIcon className="fp-text-dark"
-                                                                                    icon={faTwitter}
-                                                                                    size="2x"/></Nav.Link>
-                <Nav.Link href="https://github.com/vogon101"><FontAwesomeIcon className="fp-text-dark"
-                                                                              icon={faGithub} size="2x"/></Nav.Link>
-                <Nav.Link href="https://linkedin.com/in/freddie-poser"><FontAwesomeIcon className="fp-text-dark"
-                                                                                        icon={faLinkedin}
-                                                                                        size="2x"/></Nav.Link>
-                <Nav.Link href="https://blog.vogonjeltz.com"><FontAwesomeIcon className="fp-text-dark" icon={faRss}
-                                                                              size="2x"/></Nav.Link>
-            </Navbar.Collapse>
-        </Navbar>
+        <FPNavbar/>
         <header className="App-header" id="home">
             <h1>Freddie Poser</h1>
             <FadeInSection>
