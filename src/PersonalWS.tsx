@@ -1,15 +1,12 @@
-import Navbar from "react-bootstrap/Navbar";
-import {Nav} from "react-bootstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faGithub, faTwitter} from "@fortawesome/free-brands-svg-icons";
-import {faLinkedin} from "@fortawesome/free-brands-svg-icons/faLinkedin";
-import {faAngleDoubleDown, faRss} from "@fortawesome/free-solid-svg-icons";
+import {faAngleDoubleDown} from "@fortawesome/free-solid-svg-icons";
 import {FadeInSection} from "./components/FadeInContainer";
 import {AboutSection} from "./sections/AboutSection";
 import {SkillsSection} from "./sections/SkillsSection";
 import {ProjectsSection} from "./sections/ProjectsSection";
 import React, {RefObject} from "react";
 import {FPNavbar} from "./components/FPNavbar";
+import {Helmet} from "react-helmet";
 
 function PersonalWS(props: { appRef: RefObject<HTMLDivElement> }) {
 
@@ -37,6 +34,9 @@ function PersonalWS(props: { appRef: RefObject<HTMLDivElement> }) {
     )
 
     return (<div>
+        <Helmet>
+            <title>Freddie Poser</title>
+        </Helmet>
         <FPNavbar/>
         <header className="App-header" id="home">
             <h1>Freddie Poser</h1>

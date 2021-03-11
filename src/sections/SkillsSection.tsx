@@ -92,7 +92,7 @@ function SkillsSection() {
                     University Councillor, <a
                     href="https://www.governance.cam.ac.uk/committees/council/Pages/about.aspx"
                     className="link-highlight">University of Cambridge</a>
-                    <p className="align-right small font-italic font-weight-bold">2020-21</p>
+                    <p className="align-right small font-italic font-weight-bold">2020-22</p>
 
                 </Ili>
 

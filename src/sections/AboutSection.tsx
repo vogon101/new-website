@@ -1,6 +1,6 @@
 import profilePic from "../img/rome.jpg";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faEnvelope, faFileAlt, faRss, faRssSquare} from "@fortawesome/free-solid-svg-icons";
+import {faEnvelope, faFileAlt, faRssSquare} from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import {
     faGithubSquare,
@@ -8,7 +8,6 @@ import {
     faTwitterSquare
 } from "@fortawesome/free-brands-svg-icons";
 import {SocialButton} from "../components/SocialButton";
-import {faLinkedin} from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import {SectionCard} from "../components/SectionCard";
 
 function AboutSection() {
