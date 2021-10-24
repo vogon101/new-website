@@ -4,6 +4,8 @@ import './App.css';
 import {PersonalWS} from "./PersonalWS";
 import {BrowserRouter, Route} from "react-router-dom";
 import {PhotosWS} from "./photography/PhotosWS";
+import {Helmet} from "react-helmet";
+import {FPNavbar} from "./components/FPNavbar";
 
 function App() {
 
@@ -19,7 +21,15 @@ function App() {
                 <Route path="/photos">
                     <PhotosWS/>
                 </Route>
-
+                <Route>
+                    <div>
+                        <Helmet>
+                            <title>Freddie Poser</title>
+                        </Helmet>
+                        <FPNavbar/>
+                        Not Found
+                    </div>
+                </Route>
             </div>
         </BrowserRouter>
     );
