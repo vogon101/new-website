@@ -3,7 +3,7 @@ import './App.css';
 
 import {PersonalWS} from "./PersonalWS";
 import {BrowserRouter, Route} from "react-router-dom";
-import {PhotosWS} from "./PhotosWS";
+import {PhotosWS} from "./photography/PhotosWS";
 
 function App() {
 

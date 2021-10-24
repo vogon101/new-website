@@ -1,26 +1,25 @@
 import React from "react";
 import {PhotoDefinition} from "../sections/PhotosSection";
 import {SectionCard} from "./SectionCard";
-import {PHOTOS_BASE, PHOTOS_EXT} from "../setup";
+import {getPhotoGetter} from "../utils";
 
 export interface PhotosCardProps {
     definition: PhotoDefinition
+    index: number
 }
 
 export function PhotosCard(props: PhotosCardProps) {
 
     const def = props.definition
 
-    const base = PHOTOS_BASE + def.dir + "/"
-
-    function getPhoto(num: number) {
-        return `${base}${num.toString().padStart(2, "0")}${PHOTOS_EXT}`
-    }
+    const getPhoto = getPhotoGetter(def.dir);
 
     return (
-        <SectionCard image={getPhoto(def.headerimg)} imgMaxHeight={500}>
-            <h3>{def.name}</h3>
-        </SectionCard>
+        <a href={"/photos/" + props.index}>
+            <SectionCard image={getPhoto(def.headerimg)} imgMaxHeight={500}>
+                <h3>{def.name}</h3>
+            </SectionCard>
+        </a>
     )
 
 }

@@ -7,7 +7,7 @@ interface BadgeProps {
 
 function Badge(props: BadgeProps) {
     return (
-        <div style={{backgroundColor: props.color}} className="section-badge" >
+        <div style={{backgroundColor: props.color}} className="section-badge">
             {props.text}
         </div>
     );

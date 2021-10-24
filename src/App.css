@@ -189,7 +189,7 @@ a {
     padding-bottom: 20px;
 }
 
-.section-dark{
+.section-dark {
     background-color: var(--color-dark);
     color: var(--color-light);
     --card-shadow-normal: 5px 5px 10px #2a2e33;
@@ -346,8 +346,6 @@ a {
 }
 
 
-
-
 .section-card-bottom {
     border-radius: 0 0 5px 5px;
     position: relative;
@@ -456,7 +454,7 @@ a {
 
 .section-badge {
     border-radius: 5px;
-    right:0;
+    right: 0;
     color: white;
     padding: 2px 4px;
 }
@@ -481,4 +479,163 @@ a {
 
 .link-highlight {
     color: var(--color-highlight) !important;
+}
+
+.image-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*padding: 5px;*/
+    align-self: center;
+    align-content: center;
+    justify-content: space-between;
+    min-width: 90%;
+}
+
+.image-grid-image {
+    flex-grow: 1;
+    margin: 5px;
+}
+
+.image-grid-image-link img {
+    max-height: 400px;
+}
+
+
+@media (min-width: 1000px) {
+    .image-grid-image {
+        max-width: 32%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .image-grid-image {
+        max-width: 100%;
+    }
+}
+
+.custom-switch {
+    padding-left: 0 !important;
+}
+
+.custom-control {
+    padding-left: 0 !important;
+}
+
+.image-grid-image:hover {
+    transform: scale(1.04) translateX(0);
+    z-index: 5;
+    transition: all 0.5s;
+}
+
+.image-grid-container {
+    display: block;
+    min-width: 90%;
+}
+
+.padding-vertical {
+    height: 1em;
+}
+
+.image-expand {
+    align-self: center;
+    max-height: 80vh;
+    max-width: 90vw;
+    display: flex;
+    align-content: center;
+}
+
+.image-expand-image {
+    flex: 1;
+    padding: 10px;
+}
+
+.image-expand-image img {
+    min-height: 0;
+    max-height: 80vh;
+    max-width: 100%;
+}
+
+.section-content-hor {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-arrow {
+    min-height: 100%;
+    flex: 1;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+}
+
+.image-arrow-inner {
+    display: flex;
+}
+
+.image-arrow-enabled:hover {
+    background-color: var(--color-light);
+    /*background: linear-gradient(90deg, #ffffff 0%, var(--color-light) 50%, #ffffff 100%);*/
+}
+
+.image-arrow-inner-right {
+    align-self: flex-start;
+}
+
+.image-arrow-inner-left {
+    align-self: flex-end;
+}
+
+.fullwidth-center {
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-self: center;
+    flex: 1;
+}
+
+.smooth-image-wrapper {
+    justify-self: center;
+    align-self: center;
+    /*display: flex;*/
+}
+
+.smooth-image {
+    transition: opacity 2s;
+}
+
+.smooth-image-wrapper-visible {
+    opacity: 1;
+}
+
+.smooth-image-visible {
+    opacity: 1;
+}
+
+.smooth-image-hidden {
+    opacity: 0;
+    /*display: none;*/
+    width: 0;
+    height: 0;
+}
+
+.smooth-image-preloader {
+    max-height: 400px;
+    background-color: var(--color-light);
+    /*display: flex;*/
+}
+
+.smooth-image-loading {
+    justify-self: center;
+    align-self: center;
+    background-color: var(--color-light);
+    height: 100%;
+    width: 100%;
+    /*border: black 10px solid;*/
 }

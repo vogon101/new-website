@@ -1,7 +1,6 @@
 import React from 'react';
 import {IconDefinition} from "@fortawesome/fontawesome-svg-core";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faJava} from "@fortawesome/free-brands-svg-icons";
 import {Badge} from "./Badge";
 
 interface LanguageProps {
@@ -14,16 +13,15 @@ interface LanguageProps {
 function Language(props: LanguageProps) {
 
 
-
     let badge = <div/>;
     if (props.ability) {
         let color = "#445599"
         switch (props.ability) {
             case "Highly Proficient":
-                color="#22aa55"
+                color = "#22aa55"
                 break
             case "Proficient":
-                color="#779933"
+                color = "#779933"
         }
         badge = <Badge text={props.ability} color={color}/>
     }

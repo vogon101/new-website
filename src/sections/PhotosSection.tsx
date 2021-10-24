@@ -6,17 +6,18 @@ export interface PhotoDefinition {
     dir: string
     count: number
     headerimg: number
+    description: string
 }
 
 type PhotosProps = {
     photos: Array<PhotoDefinition>
 }
 
-function PhotosSection({photos}:PhotosProps) {
+function PhotosSection({photos}: PhotosProps) {
 
     return (
         <div className="section-content">
-            {photos.map ((v, i, a) => <PhotosCard definition={v}/>)}
+            {photos.map((v, i, a) => <PhotosCard definition={v} index={i}/>)}
         </div>
     )
 
