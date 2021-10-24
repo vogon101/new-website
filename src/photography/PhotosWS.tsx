@@ -3,10 +3,10 @@ import {FPNavbar} from "../components/FPNavbar";
 import {PhotoDefinition, PhotosSection} from "../sections/PhotosSection";
 import {FadeInSection} from "../components/FadeInContainer";
 import {PHOTOS_BASE, PHOTOS_INDEX} from "../setup";
-import {Route, useRouteMatch} from "react-router-dom";
-import Switch from "react-bootstrap/Switch";
+import {Route, Switch, useRouteMatch} from "react-router-dom";
 import {PhotoGroupPage} from "./PhotoGroupPage";
 import {Helmet} from "react-helmet";
+import {NotFoundPage} from "../components/NotFoundPage";
 
 function PhotosWS() {
 
@@ -49,6 +49,10 @@ function PhotosWS() {
                             {isLoaded ? <PhotoGroupPage photos={items}/> : <div>Loading</div>}
                         </FadeInSection>
                     </div>
+                </Route>
+                <Route>
+                    PHOTOWS
+                    <NotFoundPage nohead/>
                 </Route>
             </Switch>
 
