@@ -1,6 +1,7 @@
 import React, {ReactNode} from "react"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowLeft, faArrowRight} from "@fortawesome/free-solid-svg-icons";
+import {SmoothImage} from "./SmoothImage";
 
 interface CardProps {
 
@@ -25,8 +26,7 @@ function SectionCard(props: CardProps) {
                     {props.sidebarImage ?
                         <div className="section-card-image-container"
                              style={props.imgMaxHeight ? {maxHeight: props.imgMaxHeight} : {}}>
-                            <img src={props.image} alt=""
-                                 className=""/>
+                            <img src={props.image} alt=""/>
                         </div> : <span/>}
                     <div className="section-card-bottom align-left">
                         {props.sidebar}

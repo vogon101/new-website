@@ -17,7 +17,10 @@ function PhotosSection({photos}: PhotosProps) {
 
     return (
         <div className="section-content">
-            {photos.map((v, i, a) => <PhotosCard definition={v} index={i}/>)}
+            <h1>Photography Portfolio</h1>
+            <div className="photos-section">
+                {photos.map((v, i, a) => <PhotosCard definition={v} index={i}/>)}
+            </div>
         </div>
     )
 

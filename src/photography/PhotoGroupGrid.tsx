@@ -30,7 +30,7 @@ function PhotoGroupGrid({photoGroup}: PhotoGroupProps) {
                                         <div className="image-grid-image" key={`grid-img-${i}`}>
                                             <Link to={`${sectionID}/${i}`} className="image-grid-image-link">
                                                 <SmoothImage alt={`Image ${i} from ${photoGroup.name}`}
-                                                             src={getPhoto(i + 1)}/>
+                                                             src={getPhoto(i + 1)} maxSize/>
                                             </Link>
                                         </div>
                                 )
