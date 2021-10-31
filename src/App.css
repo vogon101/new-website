@@ -700,3 +700,17 @@ a {
     color: var(--color-light);
     font-size: 20pt;
 }
+
+.photos-header-logo {
+    max-height: 10vh;
+}
+.photos-header-logo-container {
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .photos-header-logo {
+        max-width: 90%;
+        max-height: 50vh;
+    }
+}
