@@ -27,7 +27,8 @@ function AboutSection() {
                         <p>
                             I am a fourth year student at the University of Cambridge. I currently study management at
                             the Cambridge Judge Business School. Previously, I studied Computer Science for which I
-                            received a high first.
+                            received a high first. I swapped to management because I wanted to apply my strong technical skills to
+                            business&mdash;an area I've always had a passion for.
                         </p>
                     </div>
                 </div>

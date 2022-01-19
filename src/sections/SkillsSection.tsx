@@ -8,7 +8,7 @@ import {
     faChartLine,
     faCode,
     faComment,
-    faDatabase,
+    faDatabase, faFileAlt,
     faGraduationCap,
     faMicroscope,
     faNewspaper,
@@ -72,7 +72,8 @@ function SkillsSection() {
                 <div>
                     <Language icon={faDatabase} name="SQL"/>
                     <Language icon={faGitAlt} name="Git"/>
-                    <Language icon={faLinux} name="Linux" noLine/>
+                    <Language icon={faLinux} name="Linux"/>
+                    <Language icon={faFileAlt} name="LateX" noLine/>
                 </div>
             </div>
         </SectionCard>
@@ -94,8 +95,7 @@ function SkillsSection() {
                     <p>
                         I am the current University Councillor at the University of Cambridge. I was elected twice by
                         the students to sit on the governing body of the University. I am a full trustee of the
-                        University,
-                        a multi-billion pound charity.
+                        University, a multi-billion pound charity.
                     </p>
                 </div>
                 <div className="section-content-valign-bottom">
@@ -203,7 +203,7 @@ function SkillsSection() {
 
         </SectionCard>
 
-        <SectionCard image={cameraimg} more imgMaxHeight={200}>
+        <SectionCard image={cameraimg} imgMaxHeight={200}>
             <h3>Other</h3>
             <ul className="fa-ul">
                 <Ili icon={faCamera}>
@@ -211,6 +211,14 @@ function SkillsSection() {
                     <p className="small">
                         I have photographed a number of events in Cambridge as well as done photography for the Liberal
                         Democrats
+                    </p>
+                </Ili>
+                <Ili icon={faChartLine}>
+                    Data Analysis & Reporting
+                    <p className="small">
+                        I have strong data analysis skills built up through both academic courses and professional experience.
+                        I am able to create clear and concise reports based on a rigorous understanding of the underlying
+                        facts at pace.
                     </p>
                 </Ili>
             </ul>

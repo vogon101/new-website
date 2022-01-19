@@ -41,7 +41,7 @@ function PersonalWS(props: { appRef: RefObject<HTMLDivElement> }) {
         <header className="App-header" id="home">
             <h1>Freddie Poser</h1>
             <FadeInSection>
-                <p className="subheader">Politics & Computers</p>
+                <p className="subheader">Computer Science and Management Student</p>
             </FadeInSection>
             <div className="force-bottom">
                 {DownArrow("about")}
