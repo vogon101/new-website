@@ -2,6 +2,8 @@ import React from "react";
 import {PhotoDefinition} from "../sections/PhotosSection";
 import {SectionCard} from "./SectionCard";
 import {getPhotoGetter} from "../utils";
+import {Link} from "react-router-dom";
+import {SmoothImage} from "./SmoothImage";
 
 export interface PhotosCardProps {
     definition: PhotoDefinition
@@ -15,11 +17,18 @@ export function PhotosCard(props: PhotosCardProps) {
     const getPhoto = getPhotoGetter(def.dir);
 
     return (
-        <a href={"/photos/" + props.index}>
-            <SectionCard image={getPhoto(def.headerimg)} imgMaxHeight={500}>
-                <h3>{def.name}</h3>
-            </SectionCard>
-        </a>
+        <Link to={"/photos/" + props.index}>
+            <div className="photos-section-card">
+                <div className="photos-section-card-inner">
+                    <SmoothImage src={getPhoto(def.headerimg)}/>
+                    <div className="photos-section-card-overlay">
+                        <div className="photos-section-card-overlay-text">
+                            {def.name}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </Link>
     )
 
 }

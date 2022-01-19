@@ -3,10 +3,11 @@ import React, {useEffect, useRef} from "react";
 type SmoothImageProps = {
     src: string
     alt?: string
+    maxSize?: boolean
 };
 
 
-function SmoothImage({src, alt}: SmoothImageProps) {
+function SmoothImage({src, alt, maxSize}: SmoothImageProps) {
 
     const [loaded, setLoaded] = React.useState(false);
     const img = useRef<HTMLImageElement>(null);
@@ -25,7 +26,10 @@ function SmoothImage({src, alt}: SmoothImageProps) {
                 clearInterval(poll)
                 const w = img.current.naturalWidth
                 const h = img.current.naturalHeight
-                if (h > 400) {
+
+                if (!maxSize) {
+                    setSize({w:w, h:h})
+                } else if (h > 400) {
                     setSize({w: (w / h) * 400, h: 400})
                 } else if (window.innerWidth > 1000) {
                     setSize({w: 0.32 * window.innerWidth, h: (h / w) * (0.32 * window.innerWidth)})
