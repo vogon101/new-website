@@ -277,7 +277,7 @@ a {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1500px) {
     .section-card-slide {
         position: absolute;
         width: 100%;
@@ -304,7 +304,7 @@ a {
 
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1500px) {
     .section-card-slide {
         position: absolute;
         width: 100%;
@@ -713,4 +713,13 @@ a {
         max-width: 90%;
         max-height: 50vh;
     }
+}
+
+.section-scrollable {
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.p-justify {
+    text-align: justify;
 }

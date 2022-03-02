@@ -16,7 +16,8 @@ import {
     faRss,
     faTable,
     faUniversity,
-    faVoteYea
+    faVoteYea,
+    faBuilding, faTv
 } from "@fortawesome/free-solid-svg-icons";
 import {faGitAlt, faGithub, faJava, faLinux, faPhp, faPython, faReact} from "@fortawesome/free-brands-svg-icons";
 import {Language} from "../components/Language";
@@ -82,48 +83,22 @@ function SkillsSection() {
             <div className="align-left section-content-valign">
                 <div className="section-content-valign-top">
                     <p>
-                        I am passionate about politics - I am an active member of the Liberal Democrats and was the
-                        Chair
-                        of the Cambridge University Liberal Association. I am an experienced and confident public
-                        speaker, having spoken a number of times a the Cambridge Union.
+                        Elected twice by the students to sit on the University Council, the governing body of the University of Cambridge, acting as a full trustee of the University, a £3bn charity. During my term, I have focused on:
                     </p>
+                    <ul>
+                        <li>Pensions - as an unconflicted member I frequently contribute on discussions regarding the national pension scheme (USS) and union negotiations</li>
+                        <li>University financial performance and investment – In addition to main Council, I attend the Business Committee, covering financial, investment and governance issues</li>
+                    </ul>
+                    <hr/>
+                    <p>
+                        I am an experienced and confident public speaker, having spoken a number of times a the Cambridge Union.
+                    </p>
+
+
                     <p>
                         I have debated numerous well known and illustrious speakers, including cabinet ministers,
                         experienced journalists and academics.
                     </p>
-                    <hr/>
-                    <p>
-                        I am the current University Councillor at the University of Cambridge. I was elected twice by
-                        the students to sit on the governing body of the University. I am a full trustee of the
-                        University, a multi-billion pound charity.
-                    </p>
-                </div>
-                <div className="section-content-valign-bottom">
-                    <a href="https://github.com/vogon101" className="link-highlight">
-                        <Language noLine icon={faRss} name="Read more on my Substack"/>
-                    </a>
-                </div>
-            </div>
-        }>
-            <h3>Politics & Public Speaking</h3>
-            <ul className="fa-ul">
-                <Ili icon={faVoteYea}>
-                    Chair, <a href="https://cula.org.uk" className="link-highlight">Cambridge University Liberal
-                    Association</a>
-                    <p className="align-right small font-italic font-weight-bold">2020-21</p>
-
-                </Ili>
-
-                <Ili icon={faUniversity}>
-                    University Councillor, <a
-                    href="https://www.governance.cam.ac.uk/committees/council/Pages/about.aspx"
-                    className="link-highlight">University of Cambridge</a>
-                    <p className="align-right small font-italic font-weight-bold">2020-22</p>
-
-                </Ili>
-
-                <Ili icon={faComment}>
-                    Cambridge Union Debates
                     <ul>
                         <li>
                             THR The Obama Years
@@ -154,13 +129,66 @@ function SkillsSection() {
                                 </span>
                         </li>
                     </ul>
+
+                </div>
+                <div className="section-content-valign-bottom">
+                    <a href="https://freddieposer.substack.com/" className="link-highlight">
+                        <Language noLine icon={faRss} name="Read more on my Substack"/>
+                    </a>
+                </div>
+            </div>
+        }>
+            <h3>Politics & Public Speaking</h3>
+            <ul className="fa-ul">
+                <Ili icon={faVoteYea}>
+                    Chair, <a href="https://cula.org.uk" className="link-highlight">Cambridge University Liberal
+                    Association</a>
+                    <p className="align-right small font-italic font-weight-bold">2020-21</p>
+
                 </Ili>
+
+                <Ili icon={faUniversity}>
+                    University Councillor, <a
+                    href="https://www.governance.cam.ac.uk/committees/council/Pages/about.aspx"
+                    className="link-highlight">University of Cambridge</a>
+                    <p className="align-right small font-italic font-weight-bold">2020-22</p>
+
+                </Ili>
+
+                <Ili icon={faComment}>
+                    Cambridge Union Debates
+                </Ili>
+                <Ili icon={faVoteYea}>
+                    <a href={"https://www.europeanmovement.co.uk/"} className="link-highlight">European Movement UK</a> - National Council Member
+                </Ili>
+                
+                <Ili icon={faBuilding}>
+                            Social Media and Volunteer lead for <a className="link-highlight" href={"https://www.pricedout.org.uk/"}>PricedOutUK</a>
+                </Ili>
+                <Ili icon={faTv}>
+                            Appearances on GBNews to discuss housing
+                            <span className="float-right">
+                                    <span className="align-right pad-hor">
+                                        <Ia icon={faPlay} href={"https://www.youtube.com/watch?v=f8TWiUtGVoU"}/>
+                                    </span>
+                            </span>
+                </Ili>
+                    
+                
+                
                 <Ili icon={faComment}>
                     Other Speaking & Press
                     <ul>
                         <li>
+                            Written for <a href={"https://capx.co/"} className={"link-highlight"}>CapX</a>
+                            <span className="float-right">
+                                    <span className="align-right pad-hor">
+                                        <Ia icon={faNewspaper} href={"https://capx.co/author/freddieposer/"}/>
+                                    </span>
+                            </span>
+                        </li>
+                        <li>
                             Interviewed on ITV News Anglia
-                            <span className="float-right small font-italic font-weight-bold">Oct 2020</span>
                         </li>
                         <li>
                             Cambridge "No-Brexit" Rally
@@ -168,7 +196,6 @@ function SkillsSection() {
                                     <span className="align-right pad-hor">
                                         <Ia icon={faPlay} href={"https://www.youtube.com/watch?v=pL5IcZuW2RQ"}/>
                                     </span>
-                                    <span className="small font-italic font-weight-bold">Oct 2019</span>
                             </span>
                         </li>
                         <li>
@@ -178,7 +205,6 @@ function SkillsSection() {
                                     <Ia icon={faNewspaper}
                                         href={"https://www.standard.co.uk/insider/lib-dem-london-elections-voting-politics-b944946.html"}/>
                                 </span>
-                                <span className="small font-italic font-weight-bold">Jul 2021</span>
                             </span>
                         </li>
 
@@ -193,7 +219,6 @@ function SkillsSection() {
                                     <Ia icon={faNewspaper}
                                         href={"https://www.thenational.scot/news/19575781.libdem-membership-collapses-27-discontent-grows/"}/>
                                 </span>
-                                <span className="small font-italic font-weight-bold">Jul 2021</span>
                             </span>
                         </li>
 

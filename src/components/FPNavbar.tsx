@@ -28,7 +28,7 @@ function FPNavbar() {
                 <Nav.Link href="https://linkedin.com/in/freddie-poser"><FontAwesomeIcon className="fp-text-dark"
                                                                                         icon={faLinkedin}
                                                                                         size="2x"/></Nav.Link>
-                <Nav.Link href="https://blog.vogonjeltz.com"><FontAwesomeIcon className="fp-text-dark" icon={faRss}
+                <Nav.Link href="https://freddieposer.substack.com/"><FontAwesomeIcon className="fp-text-dark" icon={faRss}
                                                                               size="2x"/></Nav.Link>
             </Navbar.Collapse>
         </Navbar>

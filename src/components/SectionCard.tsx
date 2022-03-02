@@ -22,7 +22,7 @@ function SectionCard(props: CardProps) {
         sidebar = (
             <div
                 className={`section-card-slide section-card-slide-${props.sidebarDirection ? props.sidebarDirection : "right"} section-card`}>
-                <div className="section-card-contents">
+                <div className="section-card-contents section-scrollable">
                     {props.sidebarImage ?
                         <div className="section-card-image-container"
                              style={props.imgMaxHeight ? {maxHeight: props.imgMaxHeight} : {}}>
@@ -52,7 +52,7 @@ function SectionCard(props: CardProps) {
                             <div className="section-content-valign-bottom">
                                 {props.sidebarDirection === "left" ?
                                     <FontAwesomeIcon icon={faArrowLeft}/> :
-                                    <div className="align-right"><FontAwesomeIcon icon={faArrowRight}/></div>
+                                    <div className="align-right">More <FontAwesomeIcon icon={faArrowRight}/></div>
                                 }
                             </div>
                             : <div/>

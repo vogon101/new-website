@@ -24,7 +24,7 @@ function AboutSection() {
                 <div className="section-content-valign-top">
                     <div className="section-content-top">
                         <h1>About Me</h1>
-                        <p>
+                        <p className="p-justify">
                             I am a fourth year student at the University of Cambridge. I currently study management at
                             the Cambridge Judge Business School. Previously, I studied Computer Science for which I
                             received a high first. I swapped to management because I wanted to apply my strong technical skills to
