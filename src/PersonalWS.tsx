@@ -7,6 +7,7 @@ import {ProjectsSection} from "./sections/ProjectsSection";
 import React, {RefObject} from "react";
 import {FPNavbar} from "./components/FPNavbar";
 import {Helmet} from "react-helmet";
+import {PricedOutSection} from "./sections/PricedOutSection";
 
 function PersonalWS(props: { appRef: RefObject<HTMLDivElement> }) {
 
@@ -41,7 +42,7 @@ function PersonalWS(props: { appRef: RefObject<HTMLDivElement> }) {
         <header className="App-header" id="home">
             <h1>Freddie Poser</h1>
             <FadeInSection>
-                <p className="subheader">Computer Science and Management Student</p>
+                <p className="subheader">Computer Science and Management Graduate</p>
             </FadeInSection>
             <div className="force-bottom">
                 {DownArrow("about")}
@@ -59,6 +60,14 @@ function PersonalWS(props: { appRef: RefObject<HTMLDivElement> }) {
             <FadeInSection>
                 <h1>Skills & Achievements</h1>
                 <SkillsSection/>
+            </FadeInSection>
+            <div className="break-small"/>
+            {DownArrow("pricedout")}
+        </div>
+
+        <div className="Section fp-text-dark" id="pricedout">
+            <FadeInSection>
+                <PricedOutSection/>
             </FadeInSection>
             <div className="break-small"/>
             {DownArrow("projects")}

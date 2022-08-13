@@ -139,42 +139,25 @@ function SkillsSection() {
             </div>
         }>
             <h3>Politics & Public Speaking</h3>
+            <Language icon={faBuilding}
+                      name={<>Director, <a className="link-highlight" href={"https://www.pricedout.org.uk/"}>PricedOutUK</a></>}
+                      date="2022&ndash;"
+            >Director of a national campaign dedicated to seeing more housing built</Language>
+            <Language icon={faVoteYea}
+                      name={<>Chair, <a href="https://cula.org.uk" className="link-highlight">Cambridge University Liberal Association</a></>}
+                      date="2020&ndash;21"
+            ></Language>
+            <Language icon={faVoteYea}
+                      name={<>University Councillor, <a
+                          href="https://www.governance.cam.ac.uk/committees/council/Pages/about.aspx"
+                          className="link-highlight">University of Cambridge</a></>}
+                      date="2020&ndash;22"
+            >Elected twice to serve as a full trustee of the University of Cambridge</Language>
+            <Language icon={faTv}
+                      name={<span>Multiple TV appearances to discuss housing policy</span>}
+                      iconLink={<Ia icon={faPlay} href={"https://www.youtube.com/channel/UCNWSWaIVnAXK31IRsHBNXQA/videos"}/>}
+            ></Language>
             <ul className="fa-ul">
-                <Ili icon={faVoteYea}>
-                    Chair, <a href="https://cula.org.uk" className="link-highlight">Cambridge University Liberal
-                    Association</a>
-                    <p className="align-right small font-italic font-weight-bold">2020-21</p>
-
-                </Ili>
-
-                <Ili icon={faUniversity}>
-                    University Councillor, <a
-                    href="https://www.governance.cam.ac.uk/committees/council/Pages/about.aspx"
-                    className="link-highlight">University of Cambridge</a>
-                    <p className="align-right small font-italic font-weight-bold">2020-22</p>
-
-                </Ili>
-
-                <Ili icon={faComment}>
-                    Cambridge Union Debates
-                </Ili>
-                <Ili icon={faVoteYea}>
-                    <a href={"https://www.europeanmovement.co.uk/"} className="link-highlight">European Movement UK</a> - National Council Member
-                </Ili>
-                
-                <Ili icon={faBuilding}>
-                            Social Media and Volunteer lead for <a className="link-highlight" href={"https://www.pricedout.org.uk/"}>PricedOutUK</a>
-                </Ili>
-                <Ili icon={faTv}>
-                            Appearances on GBNews to discuss housing
-                            <span className="float-right">
-                                    <span className="align-right pad-hor">
-                                        <Ia icon={faPlay} href={"https://www.youtube.com/watch?v=f8TWiUtGVoU"}/>
-                                    </span>
-                            </span>
-                </Ili>
-                    
-                
                 
                 <Ili icon={faComment}>
                     Other Speaking & Press
@@ -187,23 +170,25 @@ function SkillsSection() {
                                     </span>
                             </span>
                         </li>
+
                         <li>
-                            Interviewed on ITV News Anglia
-                        </li>
-                        <li>
-                            Cambridge "No-Brexit" Rally
-                            <span className="float-right">
-                                    <span className="align-right pad-hor">
-                                        <Ia icon={faPlay} href={"https://www.youtube.com/watch?v=pL5IcZuW2RQ"}/>
-                                    </span>
-                            </span>
-                        </li>
-                        <li>
-                            Quoted in Evening Standard
+                            Quoted in multiple outlets
                             <span className="float-right">
                                 <span className="align-right pad-hor">
                                     <Ia icon={faNewspaper}
                                         href={"https://www.standard.co.uk/insider/lib-dem-london-elections-voting-politics-b944946.html"}/>
+                                </span>
+                                <span className="align-right pad-hor">
+                                    <Ia icon={faNewspaper}
+                                        href={"https://www.thetimes.co.uk/article/suicide-strategy-watered-down-at-cambridge-university-say-students-vpz9hc9hh"}/>
+                                </span>
+                                <span className="align-right pad-hor">
+                                    <Ia icon={faNewspaper}
+                                        href={"https://www.telegraph.co.uk/property/house-prices/why-home-cost-57000/"}/>
+                                </span>
+                                <span className="align-right pad-hor">
+                                    <Ia icon={faNewspaper}
+                                        href={"https://www.raconteur.net/construction/how-bureaucratic-planning-rules-are-holding-back-construction/"}/>
                                 </span>
                             </span>
                         </li>
@@ -222,7 +207,26 @@ function SkillsSection() {
                             </span>
                         </li>
 
+                        <li>
+                            Interviewed on ITV News Anglia
+                        </li>
+                        <li>
+                            Cambridge "No-Brexit" Rally
+                            <span className="float-right">
+                                    <span className="align-right pad-hor">
+                                        <Ia icon={faPlay} href={"https://www.youtube.com/watch?v=pL5IcZuW2RQ"}/>
+                                    </span>
+                            </span>
+                        </li>
+
                     </ul>
+                </Ili>
+
+                <Ili icon={faComment}>
+                    Cambridge Union Debates
+                </Ili>
+                <Ili icon={faVoteYea}>
+                    <a href={"https://www.europeanmovement.co.uk/"} className="link-highlight">European Movement UK</a> - National Council Member
                 </Ili>
             </ul>
 

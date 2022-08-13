@@ -1,4 +1,4 @@
-import profilePic from "../img/rome.jpg";
+import profilePic from "../img/profilePicture.jpg";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope, faFileAlt, faRssSquare} from "@fortawesome/free-solid-svg-icons";
 import React from "react";
@@ -25,10 +25,16 @@ function AboutSection() {
                     <div className="section-content-top">
                         <h1>About Me</h1>
                         <p className="p-justify">
-                            I am a fourth year student at the University of Cambridge. I currently study management at
-                            the Cambridge Judge Business School. Previously, I studied Computer Science for which I
-                            received a high first. I swapped to management because I wanted to apply my strong technical skills to
-                            business&mdash;an area I've always had a passion for.
+                            I'm a recent graduate from the University of Cambridge where I completed an undergraduate
+                            degree in computer science followed by a year studying Management Studies at the Cambridge Judge
+                            Business School. I achieved a first in each year. I swapped from Computer Science to management because
+                            I wanted to apply my strong technical skills to business problems&mdash;an area I have
+                            always had a passion for.
+                        </p>
+                        <p className="p-justify">
+                            I have always been highly engaged in politics, currently I am the director of <i><a href="https://pricedout.org.uk">PricedOut</a></i>, the national campaign for affordable house prices.
+                            In this role I have appeared in a wide number of media outlets, including national radio, TV
+                            and press.
                         </p>
                     </div>
                 </div>

@@ -146,6 +146,10 @@ a {
     text-align: right;
 }
 
+.align-right-float{
+    float: right;
+}
+
 .align-center {
     text-align: center;
 }
@@ -462,7 +466,6 @@ a {
 .language-right {
     justify-self: end;
     margin-left: auto;
-
 }
 
 .Language {
@@ -471,6 +474,7 @@ a {
     border-bottom: 1px solid #bbb;
     padding: 1px 1px 1px 10px;
     min-height: 30px;
+
 }
 
 .language-noline {
@@ -592,6 +596,14 @@ a {
     align-content: center;
     justify-content: center;
     display: flex;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.smalltext {
+    font-size: 80%;
 }
 
 .flex-center {

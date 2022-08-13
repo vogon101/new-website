@@ -15,6 +15,7 @@ function FPNavbar() {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <Nav.Link href="/?#about">About</Nav.Link>
+                    <Nav.Link href="/?#pricedout">PricedOut</Nav.Link>
                     <Nav.Link href="/?#projects">Projects</Nav.Link>
                     <Nav.Link href="/photos">Photography</Nav.Link>
                 </Nav>

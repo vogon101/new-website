@@ -13,6 +13,7 @@ interface CardProps {
     sidebarDirection?: string
     sidebarImage?: string
     more?: boolean
+    link?: string;
 }
 
 function SectionCard(props: CardProps) {
@@ -42,8 +43,9 @@ function SectionCard(props: CardProps) {
             <div className="section-card-contents">
                 <div className="section-card-image-container"
                      style={props.imgMaxHeight ? {maxHeight: props.imgMaxHeight} : {}}>
+                    {props.link ? <a href={props.link}>
                     <img src={props.image} alt=""
-                         className=""/>
+                         className=""/></a> : <img src={props.image} alt="" className=""/>}
                 </div>
                 <div className="section-card-bottom align-left section-content-valign">
                     {props.body ? props.body : props.children}
