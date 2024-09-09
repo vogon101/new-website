@@ -42,7 +42,7 @@ function PersonalWS(props: { appRef: RefObject<HTMLDivElement> }) {
         <header className="App-header" id="home">
             <h1>Freddie Poser</h1>
             <FadeInSection>
-                <p className="subheader">Computer Science and Management Graduate</p>
+                {/* <p className="subheader">Computer Science and Management Graduate</p> */}
             </FadeInSection>
             <div className="force-bottom">
                 {DownArrow("about")}
@@ -53,32 +53,32 @@ function PersonalWS(props: { appRef: RefObject<HTMLDivElement> }) {
                 <AboutSection/>
             </FadeInSection>
             <div className="break-small"/>
-            {DownArrow("skill")}
+            {/* {DownArrow("skill")} */}
         </div>
 
-        <div className="Section section-dark" id="skill">
+        {/* <div className="Section section-dark" id="skill">
             <FadeInSection>
                 <h1>Skills & Achievements</h1>
                 <SkillsSection/>
             </FadeInSection>
             <div className="break-small"/>
             {DownArrow("pricedout")}
-        </div>
+        </div> */}
 
-        <div className="Section fp-text-dark" id="pricedout">
+        {/* <div className="Section fp-text-dark" id="pricedout">
             <FadeInSection>
                 <PricedOutSection/>
             </FadeInSection>
             <div className="break-small"/>
             {DownArrow("projects")}
-        </div>
+        </div> */}
 
-        <div className="Section fp-text-dark" id="projects">
+        {/* <div className="Section fp-text-dark" id="projects">
             <FadeInSection>
                 <h1>Projects</h1>
                 <ProjectsSection/>
             </FadeInSection>
-        </div>
+        </div> */}
     </div>)
 
 }

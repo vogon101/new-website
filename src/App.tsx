@@ -17,7 +17,7 @@ function App() {
                     <Route exact path="/">
                         <PersonalWS appRef={appRef}/>
                     </Route>
-                    <Route path="/photos" component={PhotosWS}/>
+                    {/* <Route path="/photos" component={PhotosWS}/> */}
                     <Route path="*" exact>
                         <NotFoundPage/>
                     </Route>

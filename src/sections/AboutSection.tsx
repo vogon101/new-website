@@ -1,4 +1,4 @@
-import profilePic from "../img/profilePicture.jpg";
+import profilePic from "../img/ReEdit.jpg";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope, faFileAlt, faRssSquare} from "@fortawesome/free-solid-svg-icons";
 import React from "react";
@@ -25,16 +25,10 @@ function AboutSection() {
                     <div className="section-content-top">
                         <h1>About Me</h1>
                         <p className="p-justify">
-                            I'm a recent graduate from the University of Cambridge where I completed an undergraduate
-                            degree in computer science followed by a year studying Management Studies at the Cambridge Judge
-                            Business School. I achieved a first in each year. I swapped from Computer Science to management because
-                            I wanted to apply my strong technical skills to business problems&mdash;an area I have
-                            always had a passion for.
+                            I'm a graduate of the University of Cambridge where I completed a degree in computer science followed by a year studying <a href="https://www.jbs.cam.ac.uk/programmes/undergraduate/">Management Studies</a> at the Cambridge Judge Business School. I achieved a first in each year.
                         </p>
                         <p className="p-justify">
-                            I have always been highly engaged in politics, currently I am the director of <i><a href="https://pricedout.org.uk">PricedOut</a></i>, the national campaign for affordable house prices.
-                            In this role I have appeared in a wide number of media outlets, including national radio, TV
-                            and press.
+                            I am currently the Director of <i><a href="https://pricedout.org.uk">PricedOut</a></i>, the national campaign for affordable house prices. I have grown the team of volunteers signicantly, expanded our enagement with MPs and officials and boosted our fundraising efforts. I have been featured on TV and in <a href="https://www.thetimes.com/life-style/article/nimbys-are-the-real-reason-your-children-can-t-buy-a-house-xphk9cwvz">national</a> <a href="https://www.telegraph.co.uk/news/2023/08/30/environmental-red-tape-has-brought-our-economy-to-its-knees/">press</a>.
                         </p>
                     </div>
                 </div>
@@ -44,8 +38,6 @@ function AboutSection() {
                         <SocialButton icon={faGithubSquare} name="Github" href="https://github.com/vogon101"/>
                         <SocialButton icon={faTwitterSquare} name="Twitter" href="https://twitter.com/freddie_poser"/>
                         <SocialButton icon={faLinkedinIn} name="LinkedIn" href="https://linkedin.com/in/freddie-poser"/>
-                        <SocialButton icon={faRssSquare} name="Blog" href="https://freddieposer.substack.com"/>
-                        <SocialButton icon={faFileAlt} name="CV" href="https://cv.vogonjeltz.com"/>
                     </div>
                 </div>
 

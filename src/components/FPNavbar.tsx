@@ -15,9 +15,9 @@ function FPNavbar() {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <Nav.Link href="/?#about">About</Nav.Link>
-                    <Nav.Link href="/?#pricedout">PricedOut</Nav.Link>
-                    <Nav.Link href="/?#projects">Projects</Nav.Link>
-                    <Nav.Link href="/photos">Photography</Nav.Link>
+                    {/* <Nav.Link href="/?#pricedout">PricedOut</Nav.Link> */}
+                    {/* <Nav.Link href="/?#projects">Projects</Nav.Link> */}
+                    {/* <Nav.Link href="/photos">Photography</Nav.Link> */}
                 </Nav>
             </Navbar.Collapse>
             <Navbar.Collapse className="justify-content-end">
@@ -29,8 +29,8 @@ function FPNavbar() {
                 <Nav.Link href="https://linkedin.com/in/freddie-poser"><FontAwesomeIcon className="fp-text-dark"
                                                                                         icon={faLinkedin}
                                                                                         size="2x"/></Nav.Link>
-                <Nav.Link href="https://freddieposer.substack.com/"><FontAwesomeIcon className="fp-text-dark" icon={faRss}
-                                                                              size="2x"/></Nav.Link>
+                {/* <Nav.Link href="https://freddieposer.substack.com/"><FontAwesomeIcon className="fp-text-dark" icon={faRss}
+                                                                              size="2x"/></Nav.Link> */}
             </Navbar.Collapse>
         </Navbar>
     )
