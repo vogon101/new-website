@@ -56,6 +56,34 @@ export const projectGroups: ProjectGroup[] = [
     ],
   },
   {
+    label: "Work",
+    description: "Where I spend my time, past and present.",
+    items: [
+      {
+        title: "Lightwork AI",
+        description: "Operations & Commercial Lead.",
+        tags: ["ai", "operations", "commercial"],
+        href: "https://lightwork.co",
+        year: "2026–",
+      },
+      {
+        title: "Centre for British Progress",
+        description: "Head of Product.",
+        tags: ["product", "policy"],
+        href: "https://britishprogress.org",
+        year: "2025–26",
+      },
+      {
+        title: "YIMBY Alliance",
+        description:
+          "Director of PricedOut, the national campaign for affordable housing.",
+        tags: ["housing", "advocacy"],
+        href: "https://yimbyalliance.org",
+        year: "2022–26",
+      },
+    ],
+  },
+  {
     label: "Products",
     description: "Things people actually use.",
     items: [
