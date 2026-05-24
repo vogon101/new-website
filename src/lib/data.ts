@@ -2,11 +2,12 @@ export type ProjectGroup = {
   label: string;
   description: string;
   items: Project[];
+  fullWidth?: boolean;
 };
 
 export type Project = {
   title: string;
-  description: string;
+  description?: string;
   tags: string[];
   href?: string;
   year?: string;
@@ -58,6 +59,7 @@ export const projectGroups: ProjectGroup[] = [
   {
     label: "Work",
     description: "Where I spend my time, past and present.",
+    fullWidth: true,
     items: [
       {
         title: "Lightwork AI",
@@ -75,8 +77,6 @@ export const projectGroups: ProjectGroup[] = [
       },
       {
         title: "YIMBY Alliance",
-        description:
-          "Director of PricedOut, the national campaign for affordable housing.",
         tags: ["housing", "advocacy"],
         href: "https://yimbyalliance.org",
         year: "2022–26",
@@ -105,7 +105,7 @@ export const projectGroups: ProjectGroup[] = [
     ],
   },
   {
-    label: "Writing & Speaking",
+    label: "Writing, Speaking & Other",
     description: "Words, sometimes out loud.",
     items: [
       {
@@ -115,6 +115,13 @@ export const projectGroups: ProjectGroup[] = [
         tags: ["governance", "cambridge"],
         href: "https://www.governance.cam.ac.uk/committees/council/Pages/about.aspx",
         year: "2020–22",
+      },
+      {
+        title: "Events Photography",
+        description:
+          "Photographed events around Cambridge and for the Liberal Democrats.",
+        tags: ["photography", "events"],
+        year: "2019–22",
       },
       {
         title: "Substack",

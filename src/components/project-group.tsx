@@ -1,5 +1,6 @@
 import { ProjectCard } from "@/components/project-card";
 import type { ProjectGroup as ProjectGroupType } from "@/lib/data";
+import { cn } from "@/lib/utils";
 
 export function ProjectGroup({ group }: { group: ProjectGroupType }) {
   return (
@@ -10,7 +11,9 @@ export function ProjectGroup({ group }: { group: ProjectGroupType }) {
         </h2>
         <p className="text-sm text-muted-foreground">{group.description}</p>
       </div>
-      <div className="grid gap-3 sm:grid-cols-2">
+      <div
+        className={cn("grid gap-3", group.fullWidth ? "grid-cols-1" : "sm:grid-cols-2")}
+      >
         {group.items.map((project) => (
           <ProjectCard key={project.title} project={project} />
         ))}

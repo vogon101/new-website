@@ -33,9 +33,11 @@ export function ProjectCard({ project }: { project: Project }) {
               </span>
             )}
           </div>
-          <p className="text-sm leading-relaxed text-muted-foreground">
-            {project.description}
-          </p>
+          {project.description && (
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              {project.description}
+            </p>
+          )}
         </div>
         {project.href && (
           <ArrowUpRight className="mt-0.5 h-3.5 w-3.5 shrink-0 text-muted-foreground transition-colors group-hover:text-foreground" />
