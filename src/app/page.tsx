@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 import { SocialLinks } from "@/components/social-links";
 import { ProjectGroup } from "@/components/project-group";
@@ -7,6 +8,14 @@ export default function Home() {
   return (
     <main className="mx-auto max-w-2xl px-6 py-16 sm:py-24">
       <header className="space-y-5">
+        <Image
+          src="/freddie.jpg"
+          alt="Freddie Poser"
+          width={88}
+          height={88}
+          priority
+          className="rounded-full object-cover"
+        />
         <h1 className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">
           Freddie Poser
         </h1>
