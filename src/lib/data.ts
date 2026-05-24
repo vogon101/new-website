@@ -72,7 +72,6 @@ export const projectGroups: ProjectGroup[] = [
         description:
           "Election companion app that helped voters understand candidates and policies in the 2015 General Election.",
         tags: ["civic-tech", "elections", "app"],
-        href: "https://votr.vogonjeltz.com",
         year: "2015",
       },
     ],
@@ -81,6 +80,14 @@ export const projectGroups: ProjectGroup[] = [
     label: "Writing & Speaking",
     description: "Words, sometimes out loud.",
     items: [
+      {
+        title: "University Councillor",
+        description:
+          "Elected twice by students to the University Council, the governing body of the University of Cambridge, serving as a full trustee of the £3bn charity.",
+        tags: ["governance", "cambridge"],
+        href: "https://www.governance.cam.ac.uk/committees/council/Pages/about.aspx",
+        year: "2020–22",
+      },
       {
         title: "Substack",
         description:
@@ -93,14 +100,7 @@ export const projectGroups: ProjectGroup[] = [
         description:
           "Competitive debating at the Cambridge Union, including appearances on TV and at national events.",
         tags: ["debating", "public-speaking"],
-      },
-      {
-        title: "University Councillor",
-        description:
-          "Elected twice by students to the University Council, the governing body of the University of Cambridge, serving as a full trustee of the £3bn charity.",
-        tags: ["governance", "cambridge"],
-        href: "https://www.governance.cam.ac.uk/committees/council/Pages/about.aspx",
-        year: "2020–22",
+        year: "2018–22",
       },
     ],
   },
